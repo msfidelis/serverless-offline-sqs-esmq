@@ -1,0 +1,30 @@
+{
+  "name": "serverless-offline-sqs",
+  "version": "1.0.0",
+  "description": "Plugin to manage SQS offline with ElasticMQ",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msfidelis/serverless-offline-sqs.git"
+  },
+  "keywords": [
+    "serverless",
+    "serverless-offline",
+    "sqs",
+    "lambda",
+    "elasticmq"
+  ],
+  "author": "Matheus Fidelis <msfidelis01@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/msfidelis/serverless-offline-sqs/issues"
+  },
+  "homepage": "https://github.com/msfidelis/serverless-offline-sqs#readme",
+  "dependencies": {
+    "aws-sdk": "^2.329.0",
+    "js-yaml": "^3.12.0",
+    "lodash": "^4.17.11",
+    "serverless-offline": "^3.27.0"
+  }
+}
