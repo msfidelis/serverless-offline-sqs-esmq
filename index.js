@@ -1,6 +1,4 @@
 const {join} = require('path');
-const yml = require('js-yaml');
-const fs = require('fs');
 const figures = require('figures');
 const SQS = require('aws-sdk/clients/sqs');
 const {mapValues, isEmpty, forEach, map, has, filter, get, pipe} = require('lodash/fp');
@@ -31,7 +29,7 @@ class ServerlessOfflineSQS {
     this.serverless = serverless;
     this.service = serverless.service;
     this.options = options;
-    this.config = getConfig(this.service, 'serverless-offline-sqs');
+    this.config = getConfig(this.service, 'serverless-offline-sqs-esmq');
 
     this.commands = {};
 
@@ -73,7 +71,7 @@ class ServerlessOfflineSQS {
     }
 
     throw new Error(
-      `QueueName not found. See https://github.com/godu/serverless/tree/master/packages/serverless-offline-sqs#functions`
+      `QueueName not found`
     );
   }
 
