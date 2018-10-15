@@ -59,4 +59,4 @@ Serverless: Creating Queue BooksQueueExample
 ```
 
 
-Credits: This is a custom fork from [Godu Project](https://www.npmjs.com/package/serverless-offline-sqs.)
+Credits: This is a custom fork from [Godu Project](https://www.npmjs.com/package/serverless-offline-sqs)
